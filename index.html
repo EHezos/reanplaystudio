@@ -1,208 +1,212 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RPS - Rean & Play Studio</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
+    <title>RPS - Rean & Play Studio</title>
+    <link rel="icon" type="image/png" href="cat.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
-    /* Header Styles */
-    header {
-      background: #001C30;
-      color: white;
-      padding: 20px;
-    }
+        /* Header Styles */
+        header {
+            background: #38b6ff;
+            color: black;
+            padding: 20px;
+        }
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-    nav {
-      margin-top: 10px;
-    }
+        nav {
+            margin-top: 10px;
+        }
 
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-    nav ul li {
-      display: inline-block;
-      margin-right: 10px;
-    }
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
 
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      padding: 5px 10px;
-    }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
 
-    /* Hero Section Styles */
-    .hero {
-      background: #08A4FF;
-      color: white;
-      padding: 100px;
-      text-align: center;
-    }
-     .hero img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-    }
+        /* Hero Section Styles */
+        .hero {
+            background: #ffa033;
+            color: black;
+            padding: 100px;
+            text-align: center;
+        }
 
-    .hero h1 {
-      font-size: 36px;
-    }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
 
-    /* Game Showcase Section Styles */
-    .game-showcase {
-      background: white;
-      color: black;
-      padding: 50px;
-      text-align: center;
-    }
+        .hero h1 {
+            font-size: 36px;
+        }
 
-    .game-showcase img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-    }
+        /* Game Showcase Section Styles */
+        .game-showcase {
+            background: white;
+            color: black;
+            padding: 50px;
+            text-align: center;
+        }
 
-    .game-showcase p {
-      font-size: 18px;
-    }
+        .game-showcase img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
 
-    .cta-button {
-      display: inline-block;
-      background: #08A4FF;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      margin-top: 20px;
-      font-weight: bold;
-    }
+        .game-showcase p {
+            font-size: 18px;
+        }
 
-    /* About Us Section Styles */
-    .about-us {
-      background: black;
-      color: white;
-      padding: 50px;
-      text-align: center;
-    }
+        .cta-button {
+            display: inline-block;
+            background: #08A4FF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+        }
 
-    .about-us img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-      border-radius: 50%;
-    }
+        /* About Us Section Styles */
+        .about-us {
+            background: #38b6ff;
+            color: black;
+            padding: 50px;
+            text-align: center;
+        }
 
-    /* Contact Section Styles */
-    .contact {
-      background: #08A4FF;
-      color: white;
-      padding: 50px;
-      text-align: center;
-    }
 
-    .contact input,
-    .contact textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
 
-    .contact button {
-      background: white;
-      color: #08A4FF;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-    }
+        /* Contact Section Styles */
+        .contact {
+            background: #ffa033;
+            color: black;
+            padding: 50px;
+            text-align: center;
+        }
 
-    /* Footer Styles */
-    footer {
-      background: black;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
 
-  </style>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        .contact button {
+            background: white;
+            color: #08A4FF;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <header>
+<header>
     <div class="logo">RPS - Rean & Play Studio</div>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="https://reanplaystudio.itch.io/">Games</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="https://reanplaystudio.itch.io/">Games</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
-  </header>
+</header>
 
-  <section class="hero">
+<section class="hero">
     <h1>Discover Our Exciting New Game</h1>
     <!-- Replace the image URL below with your own image -->
-    <img src="https://i.imgur.com/W4WZF1C.png" alt="Game Banner">
-  </section>
+    <img src="LetterHunter.png" alt="Game Banner">
+</section>
 
-  <section class="game-showcase">
+<section class="game-showcase">
     <h2>Game Showcase</h2>
     <!-- Replace the image URL below with your own screenshots or gameplay video -->
-    <p>Are you ready to put your critical thinking skills to the test? Introducing "PushRB," a puzzle game that will challenge and thrill you!</p>
-   <iframe frameborder="0" src="https://itch.io/embed-upload/4288669?color=000000" allowfullscreen="" width="640"
-            height="320"><a href="https://reanplaystudio.itch.io/pushrb">Play PushRB on itch.io</a></iframe>
-  </section>
+    <p >What if Mastering <span style="color: orange">READING</span> and <span style="color: orange">WRITING</span> was as <span style="color: orange">EXCITING</span> as levelling up in a <span style="color: orange">VIDEO GAME?</span> Introducing "LetterHunter," a puzzle game that will
+        challenge and thrill you!</p>
+    <video width="1080" height="512" autoplay muted>
+        <source src="test.mp4" type="video/mp4">
+    </video>
+</section>
 
-  <section class="about-us">
+<section class="about-us">
     <h2>About Us</h2>
-    <p>Rean&Play is an educational gaming start-up dedicated to revolutionizing the way children learn the Khmer language and explore the rich cultural heritage of Cambodia. Our mission is to make learning engaging, interactive, and fun while preserving and promoting the Khmer language and culture.</p>
+    <p>Rean&Play is an educational gaming start-up dedicated to revolutionizing the way children learn the Khmer
+        language and explore the rich cultural heritage of Cambodia. Our mission is to make learning engaging,
+        interactive, and fun while preserving and promoting the Khmer language and culture.</p>
+    <br>
+    <h2>Meet the Team</h2>
     <!-- Replace the image URL below with your own team photo or studio workspace image -->
-    <img src="https://i.imgur.com/hmKqvbp.png" alt="Team Photo">
-  </section>
+    <img src="Team.png" alt="Team Photo" height="291" width="856">
+</section>
 
-  <section class="contact">
+<section class="contact">
     <h2>Contact Us</h2>
     <form>
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button style=color:black type="submit">Send Message</button>
     </form>
     <p>Follow us on social media:</p>
     <a href="https://www.facebook.com/profile.php?id=100089170032576" target="_blank">Facebook</a>
     <a href="https://www.instagram.com/reanplaystudio" target="_blank">Instagram</a>
-  </section>
+</section>
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {
-      // Auto-scroll to the "About Us" section when "About" is clicked
-      const aboutLink = document.querySelector('nav ul li:nth-child(2) a');
-      aboutLink.addEventListener('click', (event) => {
-        event.preventDefault();
-        const aboutSection = document.querySelector('.about-us');
-        aboutSection.scrollIntoView({ behavior: 'smooth' });
-      });
+        // Auto-scroll to the "About Us" section when "About" is clicked
+        const aboutLink = document.querySelector('nav ul li:nth-child(2) a');
+        aboutLink.addEventListener('click', (event) => {
+            event.preventDefault();
+            const aboutSection = document.querySelector('.about-us');
+            aboutSection.scrollIntoView({behavior: 'smooth'});
+        });
 
-      // Auto-scroll to the "Contact Us" section when "Contact" is clicked
-      const contactLink = document.querySelector('nav ul li:nth-child(4) a');
-      contactLink.addEventListener('click', (event) => {
-        event.preventDefault();
-        const contactSection = document.querySelector('.contact');
-        contactSection.scrollIntoView({ behavior: 'smooth' });
-      });
+        // Auto-scroll to the "Contact Us" section when "Contact" is clicked
+        const contactLink = document.querySelector('nav ul li:nth-child(4) a');
+        contactLink.addEventListener('click', (event) => {
+            event.preventDefault();
+            const contactSection = document.querySelector('.contact');
+            contactSection.scrollIntoView({behavior: 'smooth'});
+        });
     });
-  </script>
-  <footer>
-    &copy; 2023 RPS - Rean & Play Studio. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-  </footer>
+</script>
+<footer>
+    &copy; 2023 RPS - Rean & Play Studio. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of
+    Service</a>
+</footer>
 </body>
 </html>
