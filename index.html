@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html>
+<style>
+    @font-face {
+        font-family: customfont;
+        src: url("DungGeunMo.ttf");
+    }
+    h1 {
+        font-family: customfont;
+    }
+    title {
+        font-family: customfont;
+    }
+</style>
 <head>
     <title>RPS - Rean & Play Studio</title>
     <link rel="icon" type="image/png" href="cat.png">
@@ -15,6 +27,8 @@
             background: #38b6ff;
             color: black;
             padding: 20px;
+            font-family: customfont;
+            font-size: 25px;
         }
 
         .logo {
@@ -70,6 +84,7 @@
             color: black;
             padding: 50px;
             text-align: center;
+            font-family: customfont;
         }
 
         .game-showcase img {
@@ -98,6 +113,8 @@
             color: black;
             padding: 50px;
             text-align: center;
+            font-family: customfont;
+            font-size: 20px;
         }
         .responsive{
             max-width: 100%;
@@ -112,6 +129,10 @@
             color: black;
             padding: 50px;
             text-align: center;
+            font-family: customfont;
+        }
+        .send{
+            font-family: customfont;
         }
 
         .contact input,
@@ -119,6 +140,7 @@
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
+            font-family: customfont;
         }
 
         .contact button {
@@ -135,6 +157,7 @@
             color: white;
             padding: 20px;
             text-align: center;
+            font-family: customfont;
         }
 
     </style>
@@ -216,7 +239,7 @@
         <input type="text" placeholder="Your Name">
         <input type="email" placeholder="Your Email">
         <textarea placeholder="Your Message"></textarea>
-        <button style=color:black type="submit">Send Message</button>
+        <button class="send" style=color:black type="submit">Send Message</button>
     </form>
     <p>Follow us on social media:</p>
     <a href="https://www.facebook.com/profile.php?id=100089170032576" target="_blank">Facebook</a>
