@@ -123,6 +123,7 @@
 
 
 
+
         /* Contact Section Styles */
         .contact {
             background: #ffa033;
@@ -228,6 +229,7 @@
         language and explore the rich cultural heritage of Cambodia. Our mission is to make learning engaging,
         interactive, and fun while preserving and promoting the Khmer language and culture.</p>
     <br>
+
     <h2>Meet the Team</h2>
     <!-- Replace the image URL below with your own team photo or studio workspace image -->
     <img src="Team.png" alt="Team Photo" class="responsive">
@@ -236,9 +238,9 @@
 <section class="contact">
     <h2>Contact Us</h2>
     <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message"></textarea>
+        <input type="text" name = "Your Name" placeholder="Your Name">
+        <input type="email" name = "Your Email" placeholder="Your Email">
+        <textarea name = "Your Message" placeholder="Your Message"></textarea>
         <button class="send" style=color:black type="submit">Send Message</button>
     </form>
     <p>Follow us on social media:</p>
@@ -264,8 +266,26 @@
         });
     });
 </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxhy9F8h29dauvpfR0kvxOHrGl-Qy3HlWblR_w0oej_P8iG39r_IO5Op_FhIdmht6BvCg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Succesfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
 <footer>
-    &copy; 2023 RPS - Rean & Play Studio. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of
+    &copy; 2023 RPS - Rean & Play Studio. All rights reserved. | <a href="Privacy.html" target="_blank">Privacy Policy</a> | <a href="Terms.html" target="_blank">Terms of
     Service</a>
 </footer>
 </body>
