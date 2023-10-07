@@ -11,6 +11,9 @@
     title {
         font-family: customfont;
     }
+    h2 {
+        font-family: customfont;
+    }
 </style>
 <head>
     <title>RPS - Rean & Play Studio</title>
@@ -31,13 +34,10 @@
             font-size: 25px;
         }
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
 
         nav {
-            margin-top: 10px;
+            text-align: right;
+            margin: 20px;
         }
 
         nav ul {
@@ -57,13 +57,7 @@
             padding: 5px 10px;
         }
 
-        /* Hero Section Styles */
-        .hero {
-            background: #ffa033;
-            color: black;
-            padding: 100px;
-            text-align: center;
-        }
+
 
         .hero img {
             max-width: 100%;
@@ -160,13 +154,130 @@
             text-align: center;
             font-family: customfont;
         }
+        section{
+            justify-content: center;
+        }
+        figure {
+            margin: 0;
+            position: relative
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #ffa033;
+            border-radius: 8px;
+            box-shadow: 0 0 50px #08A4FF;
+            display: grid;
+            grid-template-columns: 1fr;
+            @media (max-width: 600px) {
+                grid-template-columns: 1fr;
+            }
+            grid-gap: 10px;
+            padding: 50px;
+            text-align: center;
+        }
+        .logo{
+            position: fixed;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .container button {
+            background-color: #08A4FF;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: auto;
+            font-family: customfont;
+        }
+        .container button:hover {
+            background-color: #005D9F;
+        }
+        .container img {
+            max-width: 100%;
+            height: auto;
+            margin: auto; /* Center the image horizontally */
+        }
+        .social-media-container {
+            text-align: center;
+        }
+        .social-media-container a {color:#dcefef; text-decoration: none; padding: 10px}
+        a:visited {color:#dcefef;}
+        a:hover {color:#08A4FF;}
+        a:active {color:#dcefef;}
+
+        .social-media-container svg {
+            vertical-align: middle; /* Align the SVG vertically */
+            margin-right: 5px; /* Add some spacing between the SVG and the text */
+        }
+        /* Existing styles... */
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 20px; /* Adjust padding for smaller screens */
+            }
+
+            .logo {
+                margin-right: 10px; /* Adjust margin for smaller screens */
+            }
+
+            header {
+                font-size: 20px; /* Adjust font size for smaller screens */
+            }
+
+            nav ul {
+                margin: 10px; /* Adjust margin for smaller screens */
+            }
+
+            nav ul li {
+                display: block; /* Convert list items to block for smaller screens */
+                margin-bottom: 10px; /* Add margin between list items for smaller screens */
+            }
+
+            .hero h1 {
+                font-size: 24px; /* Adjust font size for smaller screens */
+            }
+
+            .game-showcase,
+            .about-us,
+            .contact {
+                padding: 30px; /* Adjust padding for smaller screens */
+            }
+
+            .game-showcase img,
+            .responsive {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .social-media-container {
+                text-align: center;
+            }
+
+            .social-media-container a {
+                padding: 10px;
+                margin-right: 5px; /* Add margin between social media links for smaller screens */
+            }
+
+            .social-media-container svg {
+                margin-right: 0; /* Remove margin for smaller screens */
+            }
+        }
+
+
+
 
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header>
-    <div class="logo">RPS - Rean & Play Studio</div>
+    <div class="logo"><img src="cat.png" height="75" width="75"/></div>
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -177,43 +288,14 @@
     </nav>
 </header>
 
-<section class="hero">
-    <!-- Replace the image URL below with your own image -->
-    <img src="LetterHunter.png" alt="Game Banner" style="float:left">
-    <img src="QR.png" alt="Game Banner" height="250" width="300" style="float:right">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1 style="float: right">Become Our Beta Tester Today!</h1>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-</section>
+<div class="container">
+    <img src="LetterHunter.png" height="200" width="200"/>
+    <h2>Experience the Demo!</h2>
+    <a id = "button" href = "LetterHunter-1_0_0.apk"
+       Download = "test_LetterHunter">
+        <button type = "button"> Download </button>
+    </a>
+</div>
 
 <section class="game-showcase">
     <h2>Game Showcase</h2>
@@ -243,9 +325,13 @@
         <textarea name = "Your Message" placeholder="Your Message"></textarea>
         <button class="send" style=color:black type="submit">Send Message</button>
     </form>
-    <p>Follow us on social media:</p>
-    <a href="https://www.facebook.com/profile.php?id=100089170032576" target="_blank">Facebook</a>
-    <a href="https://www.instagram.com/reanplaystudio" target="_blank">Instagram</a>
+    <div class="social-media-container">
+        <p>Follow us on social media:</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+        <a href="https://www.facebook.com/profile.php?id=100089170032576" target="_blank">Facebook</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        <a href="https://www.instagram.com/reanplaystudio" target="_blank">Instagram</a>
+    </div>
 </section>
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {
