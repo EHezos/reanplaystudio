@@ -14,6 +14,38 @@
     h2 {
         font-family: customfont;
     }
+    @media only screen and (max-width: 600px) {
+        .container {
+            padding: 20px; /* Adjust padding for smaller screens */
+        }
+
+        .logo {
+            margin-right: 10px; /* Adjust margin for smaller screens */
+        }
+
+        header {
+            font-size: 20px; /* Adjust font size for smaller screens */
+        }
+
+        nav ul {
+            margin: 10px; /* Adjust margin for smaller screens */
+        }
+
+        nav ul li {
+            display: block; /* Convert list items to block for smaller screens */
+            margin-bottom: 10px; /* Add margin between list items for smaller screens */
+        }
+    }
+    nav ul li a {color:black; text-decoration: none; padding: 10px}
+    nav ul li a:visited {color:black;}
+    nav ul li a:hover {color:#08A4FF;}
+    nav ul li a:active {color:#dcefef;}
+    .logo{
+        position: fixed;
+        font-size: 24px;
+        font-weight: bold;
+        margin-right: 20px;
+    }
 </style>
 <head>
     <title>RPS - Rean & Play Studio</title>
@@ -64,10 +96,10 @@
     <div class="logo"><img src="cat.png" height="75" width="75"/></div>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
             <li><a href="https://reanplaystudio.itch.io/">Games</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html">Contact</a></li>
         </ul>
     </nav>
 </header>
